@@ -38,3 +38,15 @@ Route::get('/form', function(){
 Route::get('/dashboard', function(){
     return view('admins.dashboard');
 });
+// Route::get('/task', function(){
+//     $tasks = [
+//         ['name'=> 'Task 1'],
+//         ['name'=> 'Task 2'],
+//         ['name'=> 'Task 3'],
+//         ['name'=> 'Task 4'],
+//     ];
+//     return view('home', ['tasks'=>$tasks]);
+// })->name('home');
+Route::get('/app', function(){
+    return view('home');
+});
