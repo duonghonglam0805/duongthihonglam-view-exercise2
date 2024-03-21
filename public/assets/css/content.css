@@ -1,0 +1,47 @@
+.menu-item{
+    border: none;
+    background-color: white;
+    /* margin: 10px; */
+    padding-right: 50px;
+}
+.content{
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 20% 60% 20%;
+}
+.content > div{
+    margin: 5px;
+}
+
+.main-content{
+    background-color: #97DFDE;
+    padding-bottom: 380px;
+    position: relative;
+}
+.main-content > div > p{
+    position: absolute;
+    top: 200px;
+    left: 70px;
+    color: rgb(16, 16, 16);
+    font-size: 30px;
+}
+.content-image > img{
+    position: absolute;
+    right: 10px;
+    width: 450px;
+}
+.content-banner{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 30px;
+    margin-top: 10px;
+}
+.content-banner-image img{
+    width: 100%;
+    height: 90%;
+}
+.product-card{
+    background-color: white;
+}

@@ -14,39 +14,33 @@ use App\Http\Controllers\AdminController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-// Route::get('/home', function(){
-//     return view('home', ['title'=>'Toidicode.com','alertMessage'=>'Thông báo đẩy']);
-// })->name('home');
-// Route::get('/home', function(){
-//     return "lam";
-// })->name('home'Route::get('/home', function(){
-Route::get('/post', function(){
-    $posts =[
-        ['name'=>'Post1'],
-        ['name'=>'Post2'],
-        ['name'=>'Post3'],
-        ['name'=>'Post4'],
+    $icons = [
+        ['icon' => 'fa-regular fa-user'],
+        ['icon' => 'fa-regular fa-user'],
+        ['icon' => 'fa-solid fa-table'],
+        ['icon' => 'fa-regular fa-user'],
+        ['icon' => 'fa-regular fa-user'],
+        ['icon' => 'fa-solid fa-tv'],
+        ['icon' => 'fa-regular fa-user'],
+        ['icon' => 'fa-regular fa-user'],
     ];
-    return view('home',compact('posts'));
-})->name('post');
 
-Route::get('/form', function(){
-    return view('form');
-});
-Route::get('/dashboard', function(){
-    return view('admins.dashboard');
-});
-// Route::get('/task', function(){
-//     $tasks = [
-//         ['name'=> 'Task 1'],
-//         ['name'=> 'Task 2'],
-//         ['name'=> 'Task 3'],
-//         ['name'=> 'Task 4'],
-//     ];
-//     return view('home', ['tasks'=>$tasks]);
-// })->name('home');
-Route::get('/app', function(){
-    return view('home');
+    $menu_items = [
+        ['item' => 'Traditional Wear'],
+        ['item' => 'Westermn wear'],
+        ['item' => 'swim'],
+        ['item' => 'winter'],
+        ['item' => 'Beauty'],
+        ['item' => 'Juwelly'],
+        ['item' => 'Personal Aplication'],
+        ['item' => 'Brands'],
+        ['item' => 'Brands'],
+        ['item' => 'Brands'],
+        ['item' => 'Brands'],
+    ];
+
+    return view('home', compact('icons', 'menu_items'));
+    // dd($dropdown_items);
+    // foreach ($dropdown_items as $key => $dropdown_item)
+    // dd($dropdown_item);
 });
